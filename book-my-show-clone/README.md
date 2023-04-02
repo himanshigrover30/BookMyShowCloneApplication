@@ -69,30 +69,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 <!-- My content -->
 
 ## my new project
 
-pages:
-    >> Home.page.jsx (Default.Hoc.jsx)
-    >> Movie.page.jsx (Movie.Hoc.jsx)
-    >> Play.page.jsx (Default.Hoc.jsx)
+pages: >> Home.page.jsx (Default.Hoc.jsx) >> Movie.page.jsx (Movie.Hoc.jsx) >> Play.page.jsx (Default.Hoc.jsx)
 
-HOC/Layouts
-    >> Default.Hoc.jsx
-    >> Movie.Hoc.jsx
+HOC/Layouts >> Default.Hoc.jsx >> Movie.Hoc.jsx
 
-Components
-    >> Cast                  Cast.Component.jsx
-    >> Entertainment         EntertainmentCard.Component.jsx
-    >> HeroCarousel          HeroCarousel.Component.jsx
-                             Arrows.Component.jsx
-    >> MovieHero             MovieHero.Component.jsx
-                             MovieInfo.Component.jsx
-    >> Navbar                Navbar.Component.jsx
-                             MovieNavbar.Component.jsx
-    >> Paymentmodal          PaymentComponent.jsx
-    >> PlayFilters           Filters.Component.jsx
-    >> PosterSliders         PosterSliders.Component.jsx
-    >>
+Components >> Cast Cast.Component.jsx >> Entertainment EntertainmentCard.Component.jsx >> HeroCarousel HeroCarousel.Component.jsx
+Arrows.Component.jsx >> MovieHero MovieHero.Component.jsx
+MovieInfo.Component.jsx >> Navbar Navbar.Component.jsx
+MovieNavbar.Component.jsx >> Paymentmodal PaymentComponent.jsx >> PlayFilters Filters.Component.jsx >> PosterSliders PosterSliders.Component.jsx >>
+
+book-my-show-clone // folder name;
