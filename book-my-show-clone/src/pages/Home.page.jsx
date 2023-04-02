@@ -1,8 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import EntertainmentCardComponent from "../Components/Entertainment/EntertainmentCardComponent";
+
+// Components
 import HeroCarousel from "../Components/HeroCarousel/HeroCarousel.Component";
 import PosterSlider from "../Components/PosterSlider/PosterSlider.Component";
+import EntertainmentCardComponent from "../Components/Entertainment/EntertainmentCardComponent";
+
+// HOC
 import DefaultLayoutHoc from "../layout/Default.layout";
 
 const HomePage = () => {
