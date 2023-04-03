@@ -7,7 +7,7 @@ function NavSm() {
     <>
       <div className="text-white flex items-center justify-between">
         <div>
-          <h3 className="text-xl font-bold">Its All Starts heere...</h3>
+          <h3 className="text-xl font-bold">It All Starts Here..</h3>
           <span className="text-gray-400 text-xs flex item-center cursor-pointer hover:text-white">
             Bangalore
           </span>
@@ -25,6 +25,9 @@ function NavSm() {
 function NavMd() {
   return (
     <>
+      <div className="w-10 h-10">
+        <img src="" alt="logo" className="w-full h-full" />
+      </div>
       <div className="w-full flex items-center gap-3 bg-white px-3 py-1 rounded-md">
         <BiSearch />
         <input
@@ -60,7 +63,24 @@ function NavLg() {
 }
 // Main Component
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <>
+      <nav className="bg-darkBackground-700 px-4 py-3">
+        {/* Small screen navbar */}
+        <div className="sm:flex md:hidden lg:hidden">
+          <NavSm />
+        </div>
+        {/* Medium screen navbar */}
+        <div className=" hidden md:flex lg:hidden">
+          <NavMd />
+        </div>
+        {/* Large screen navbar */}
+        <div className=" hidden md:hidden lg:flex">
+          <NavLg />
+        </div>
+      </nav>
+    </>
+  );
 };
 
 export default Navbar;
