@@ -83,3 +83,5 @@ MovieInfo.Component.jsx >> Navbar Navbar.Component.jsx
 MovieNavbar.Component.jsx >> Paymentmodal PaymentComponent.jsx >> PlayFilters Filters.Component.jsx >> PosterSliders PosterSliders.Component.jsx >>
 
 book-my-show-clone // folder name;
+
+## https://api.themoviedb.org/3/movie/550?api_key=79907188cb5ae75d06a2638662657afa

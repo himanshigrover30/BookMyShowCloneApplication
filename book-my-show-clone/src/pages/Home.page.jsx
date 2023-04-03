@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
+
+import axios from "axios"; //for importing API's
 
 // Components
 import HeroCarousel from "../Components/HeroCarousel/HeroCarousel.Component";
@@ -13,6 +15,14 @@ const HomePage = () => {
   const [recommendedMovies, setRecommendedMovies] = useState([]);
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
+
+  useEffect(() => {
+    const requestTopRateMovies = async () => {
+      const getTopRatedMovies = await axios.get(
+        "https://api.themoviedb.org/3/movie/top_rated?api_key=79907188cb5ae75d06a2638662657afa"
+      );
+    };
+  });
   return (
     <>
       <HeroCarousel />
