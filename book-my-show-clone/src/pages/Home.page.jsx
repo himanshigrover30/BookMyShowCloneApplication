@@ -16,15 +16,39 @@ const HomePage = () => {
   const [premierMovies, setPremierMovies] = useState([]);
   const [onlineStreamEvents, setOnlineStreamEvents] = useState([]);
 
+  // Recommended Movies
   useEffect(() => {
     const requestTopRateMovies = async () => {
       const getTopRatedMovies = await axios.get(
-        "https://api.themoviedb.org/3/movie/top_rated?api_key=79907188cb5ae75d06a2638662657afa"
+        "/movie/top_rated?api_key=79907188cb5ae75d06a2638662657afa"
       );
       setRecommendedMovies(getTopRatedMovies.data.results);
     };
     requestTopRateMovies();
   }, []);
+
+  // premier movies
+  useEffect(() => {
+    const requestPopularMovies = async () => {
+      const getPopularMovies = await axios.get(
+        "/movie/popular?api_key=79907188cb5ae75d06a2638662657afa"
+      );
+      setPremierMovies(getPopularMovies.data.results);
+    };
+    requestPopularMovies();
+  }, []);
+
+  // onlinestreamEvents
+  useEffect(() => {
+    const requestUpcomingMovies = async () => {
+      const getUpcomingMovies = await axios.get(
+        "/movie/upcoming?api_key=79907188cb5ae75d06a2638662657afa"
+      );
+      setOnlineStreamEvents(getUpcomingMovies.data.results);
+    };
+    requestUpcomingMovies();
+  }, []);
+
   return (
     <>
       <HeroCarousel />
@@ -48,11 +72,7 @@ const HomePage = () => {
       <div className="bg-premier-800 py-12">
         <div className="container mx-auto px-4 md:px-12 my-8 flex flex-col gap-3">
           <div className="hidden md:flex">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/RuPay.svg/2560px-RuPay.svg.png"
-              alt="RuPay"
-              className=""
-            />
+            <img src="" alt="RuPay" className="" />
           </div>
           <PosterSlider
             // these are called props which we need to pass
