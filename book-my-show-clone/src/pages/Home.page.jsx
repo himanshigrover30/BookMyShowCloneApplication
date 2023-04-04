@@ -21,8 +21,10 @@ const HomePage = () => {
       const getTopRatedMovies = await axios.get(
         "https://api.themoviedb.org/3/movie/top_rated?api_key=79907188cb5ae75d06a2638662657afa"
       );
+      setRecommendedMovies(getTopRatedMovies.data.results);
     };
-  });
+    requestTopRateMovies();
+  }, []);
   return (
     <>
       <HeroCarousel />

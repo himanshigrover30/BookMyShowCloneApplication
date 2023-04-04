@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Components/Navbar/Navbar.Component";
+import Navbar from "../Components/Navbar/MovieNavigation.Component";
 const MovieLayoutHoc =
   (Component) =>
   ({ ...props }) => {
